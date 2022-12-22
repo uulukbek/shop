@@ -6,7 +6,7 @@ from applications.product.models import Category, Product, Image
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        field = '__all__'
+        fields = '__all__'
 
     def validate_title(self, title):
         if Category.objects.filter(title=title.lower().exists()):
