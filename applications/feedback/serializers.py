@@ -15,3 +15,10 @@ class CommentSerializer(serializers.ModelSerializer):
     class Meta:
         models = Comment
         fields = '__all__'
+
+
+# class LikeSerializer(serializers.ModelSerializer):
+#
+#     class Meta:
+#         models = Like
+#         fields = '__all__'
